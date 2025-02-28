@@ -13,7 +13,7 @@ public class TwoNumberOperations {
         double Product = Num1 * Num2;
         double Quotient = Num1 / Num2;
         if (Num2 == 0) {
-            JOptionPane.showMessageDialog(null, "Cannot divide by zero");
+            JOptionPane.showMessageDialog(null,"Sum: " + Sum + "\nDifference: " + Diference + "\nProduct: " + Product + "\nCannot divide by zero");
             System.exit(0);
         } else {
         JOptionPane.showMessageDialog(null, "Sum: " + Sum + "\nDifference: " + Diference + "\nProduct: " + Product + "\nQuotient: " + Quotient);
