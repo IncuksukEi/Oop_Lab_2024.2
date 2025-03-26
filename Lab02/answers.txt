@@ -1,0 +1,13 @@
+Câu hỏi phần 9 
+Accessor methods (getters) nên được sử dụng khi cần hiển thị hoặc truy xuất thông tin của đối tượng ra bên ngoài lớp. Ví dụ, nếu một lớp có thuộc tính private, getter cho phép các lớp khác đọc giá trị của thuộc tính đó mà không thể thay đổi trực tiếp, đảm bảo tính đóng gói (encapsulation).
+
+Câu hỏi phần 10
+Java không cho phép tạo hai constructor có cùng kiểu tham số, dù tên tham số khác nhau. Ví dụ, hai constructor DigitalVideoDisc(String title) và DigitalVideoDisc(String category) sẽ gây lỗi vì Java chỉ phân biệt constructor qua số lượng và kiểu tham số, không qua tên. Khi gọi new DigitalVideoDisc("Animation"), trình biên dịch không thể xác định được constructor nào được sử dụng, dẫn đến lỗi ambiguity (không rõ ràng).
+
+Câu hỏi phần 15
+Java luôn sử dụng cơ chế pass by value (truyền bằng giá trị), kể cả với đối tượng. Khi truyền một đối tượng vào phương thức, thực chất là truyền một bản sao của tham chiếu (địa chỉ) đến đối tượng đó. Do đó:
+
+Nếu phương thức thay đổi thuộc tính của đối tượng, thay đổi này sẽ ảnh hưởng đến đối tượng gốc.
+
+Nhưng nếu phương thức gán lại tham chiếu (ví dụ: obj = new Object()), thay đổi này không ảnh hưởng đến đối tượng gốc bên ngoài.
+Với kiểu dữ liệu nguyên thủy (int, float, boolean,…), giá trị được sao chép, nên thay đổi trong phương thức không ảnh hưởng đến biến gốc.
