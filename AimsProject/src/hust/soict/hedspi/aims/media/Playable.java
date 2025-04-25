@@ -1,4 +1,6 @@
 package hust.soict.hedspi.aims.media;
 
-public class Playable {
+public interface Playable {
+    void play();
 }
+
