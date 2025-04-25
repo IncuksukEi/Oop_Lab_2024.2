@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class NoGarbage {
     public static void main(String[] args) throws Exception {
-        String filename = "test.txt";  // hoặc test.txt nếu bạn dùng file văn bản lớn
+        String filename = "test.txt";
         byte[] inputBytes = { 0 };
 
         long startTime, endTime;
@@ -14,7 +14,7 @@ public class NoGarbage {
 
         startTime = System.currentTimeMillis();
 
-        StringBuffer outputBuffer = new StringBuffer();  // sử dụng StringBuffer để tối ưu
+        StringBuffer outputBuffer = new StringBuffer();
 
         for (byte b : inputBytes) {
             outputBuffer.append((char) b);
