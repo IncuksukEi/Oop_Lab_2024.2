@@ -1,11 +1,11 @@
-package hust.soict.dsai.garbage;
+package hust.soict.hedspi.garbage;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class GarbageCreator {
     public static void main(String[] args) throws Exception {
-        String filename = "test.exe";
+        String filename = "test.txt";
         byte[] inputBytes = { 0 };
 
         long startTime, endTime;

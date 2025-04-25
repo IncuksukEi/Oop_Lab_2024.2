@@ -1,0 +1,10 @@
+[ConcatenationInLoops.java]
+- String +: mất 350ms
+- StringBuffer: mất 15ms
+- StringBuilder: mất 10ms
+=> StringBuilder nhanh nhất trong các trường hợp nối chuỗi nhiều lần.
+
+[GarbageCreator.java vs NoGarbage.java]
+- GarbageCreator mất 350ms, thậm chí gây lag
+- NoGarbage mất 2ms và ổn định
+=> Dùng StringBuffer hoặc StringBuilder khi xử lý file lớn sẽ tiết kiệm bộ nhớ và nhanh hơn.
