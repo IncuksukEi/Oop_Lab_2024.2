@@ -11,21 +11,21 @@ public class AWTAccumulator extends Frame {
     public AWTAccumulator() {
         setLayout(new GridLayout(2, 2));
 
-        add(new Label("Enter an Integer: ")); // Line 15
+        add(new Label("Enter an Integer: "));
 
-        tfInput = new TextField(10);          // Lines 17-19
+        tfInput = new TextField(10);
         add(tfInput);
         tfInput.addActionListener(new TFInputListener());
 
-        add(new Label("The Accumulated Sum is: ")); // Line 21
+        add(new Label("The Accumulated Sum is: "));
 
-        tfOutput = new TextField(10);               // Lines 23–25
+        tfOutput = new TextField(10);
         tfOutput.setEditable(false);
         add(tfOutput);
 
-        setTitle("AWT Accumulator");   // Line 27
-        setSize(350, 120);             // Line 28
-        setVisible(true);              // Line 29
+        setTitle("AWT Accumulator");
+        setSize(350, 120);
+        setVisible(true);
     }
 
     private class TFInputListener implements ActionListener {
@@ -38,6 +38,6 @@ public class AWTAccumulator extends Frame {
     }
 
     public static void main(String[] args) {
-        new AWTAccumulator();  // Main method
+        new AWTAccumulator();
     }
 }
