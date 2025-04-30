@@ -1,4 +1,7 @@
 package hust.soict.hedspi.aims.screen.manager;
 
-public class AddDigitalVideoDiscToStoreScreen {
+public class AddDigitalVideoDiscToStoreScreen extends AddItemToStoreScreen {
+    public AddDigitalVideoDiscToStoreScreen() {
+        super();
+    }
 }
