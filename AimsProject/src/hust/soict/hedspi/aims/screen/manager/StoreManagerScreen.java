@@ -45,16 +45,37 @@ public class StoreManagerScreen extends JFrame {
         JMenu menu = new JMenu("Options");
 
         JMenu smUpdateStore = new JMenu("Update Store");
+
         JMenuItem addBook = new JMenuItem("Add Book");
+        addBook.addActionListener(e -> {
+            new AddBookToStoreScreen(store);
+            dispose(); // Đóng màn hình hiện tại nếu muốn
+        });
+
         JMenuItem addCD = new JMenuItem("Add CD");
+        addCD.addActionListener(e -> {
+            new AddCompactDiscToStoreScreen(store);
+            dispose();
+        });
+
         JMenuItem addDVD = new JMenuItem("Add DVD");
+        addDVD.addActionListener(e -> {
+            new AddDigitalVideoDiscToStoreScreen(store);
+            dispose();
+        });
 
         smUpdateStore.add(addBook);
         smUpdateStore.add(addCD);
         smUpdateStore.add(addDVD);
 
+        JMenuItem viewStore = new JMenuItem("View Store");
+        viewStore.addActionListener(e -> {
+            new StoreManagerScreen(store); // mở lại màn hình chính
+            dispose();
+        });
+
         menu.add(smUpdateStore);
-        menu.add(new JMenuItem("View Store"));
+        menu.add(viewStore);
 
         JMenuBar menuBar = new JMenuBar();
         menuBar.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -62,6 +83,7 @@ public class StoreManagerScreen extends JFrame {
 
         return menuBar;
     }
+
 
     JPanel createHeader() {
         JPanel header = new JPanel();
