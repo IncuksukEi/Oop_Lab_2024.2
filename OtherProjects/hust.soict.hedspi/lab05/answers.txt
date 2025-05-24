@@ -69,5 +69,5 @@ Thiết kế giao diện nhanh chóng, dễ dàng, không cần code tay XML, gi
 
 15. Phần nào là thử thách nhất trong Lab05?
 Trả lời:
-Kết nối giữa controller và FXML để xử lý logic phát và thêm vào giỏ hàng.
+Phần thử thách nhất với em là xử lý luồng chuyển scene giữa các màn hình (Store và Cart) sao cho vẫn giữ được trạng thái dữ liệu (store và cart). Ngoài ra, việc thiết lập và cập nhật dữ liệu trong TableView cũng khá phức tạp vì phải hiểu rõ cơ chế binding dữ liệu với ObservableList.
 
